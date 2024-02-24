@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Preset isAutoSaved="true" xmlns="urn:schemas-nliteos-com:pn.v1">
+	<Date>04/28/2023 22:16:51</Date>
+	<AppInfo>
+		<Version>2023.4.9208</Version>
+		<Licensed>No</Licensed>
+		<Protections>Yes</Protections>
+		<Host>Windows 10 Pro (22H2) x64 - 10.0.19045.2846 (de-DE)</Host>
+	</AppInfo>
+	<ImageInfo>
+		<Version mode="offline">Windows 11 Core (22H2) x64 - 10.0.22621.1635 (de-DE)</Version>
+		<GUID>{3ED595F8-E263-4ECE-9823-CA09DE3BD692}</GUID>
+	</ImageInfo>
+	<RemoveComponents AppRemovalMode="DISM">
+		<c>microsoft.windows.contentdeliverymanager 'Content-Delivery-Manager'</c>
+		<c>clipchamp.clipchamp 'Clipchamp'</c>
+		<c>microsoft.549981c3f5f10 'Cortana'</c>
+		<c>microsoft.gethelp 'Get Help'</c>
+		<c>microsoft.getstarted 'Tipps (Erste Schritte)'</c>
+		<c>microsoft.microsoftedge 'Microsoft Edge (Alte)'</c>
+		<c>microsoft.microsoftedgedevtoolsclient 'DevTools-Client für Microsoft Edge'</c>
+		<c>microsoft.microsoftofficehub 'Office'</c>
+		<c>microsoft.microsoftsolitairecollection 'Microsoft Solitaire Collection'</c>
+		<c>microsoft.microsoftstickynotes 'Microsoft Sticky Notes'</c>
+		<c>microsoft.mixedreality.portal 'Mixed Reality Portal'</c>
+		<c>microsoft.mspaint 'Paint 3D'</c>
+		<c>microsoft.office.onenote 'OneNote'</c>
+		<c>microsoft.people 'Microsoft People'</c>
+		<c>microsoft.todos 'Microsoft To Do'</c>
+		<c>microsoft.skypeapp 'Skype'</c>
+		<c>microsoft.wallet 'Microsoft Pay'</c>
+		<c>microsoft.windowsfeedbackhub 'Feedback Hub'</c>
+		<c>microsoft.zunemusic 'Windows Media Player'</c>
+		<c>microsoft.zunevideo 'Movies &amp; TV'</c>
+		<c>microsoft.yourphone 'Your Phone'</c>
+		<c>microsoft.zunemusic 'Groove Music'</c>
+		<c>onedrive</c>
+		<c>microsoftcorporationii.microsoftfamily 'Microsoft Family'</c>
+		<c>retaildemo 'Demo-Inhalte für den Einzelhandel'</c>
+		<c>microsoftteams 'Microsoft Teams'</c>
+	</RemoveComponents>
+	<Compatibility protectHidden="false">
+		<ComponentFeatures>
+			<Feature enabled="no">AppGuard</Feature>
+			<Feature enabled="no">YubiKey</Feature>
+			<Feature enabled="no">Bluetooth</Feature>
+			<Feature enabled="no">CapFrameX</Feature>
+			<Feature enabled="yes">FileSharing</Feature>
+			<Feature enabled="yes">Discord</Feature>
+			<Feature enabled="yes">Printing</Feature>
+			<Feature enabled="yes">Recommended-All</Feature>
+			<Feature enabled="no">Hyper-V</Feature>
+			<Feature enabled="no">iCloud</Feature>
+			<Feature enabled="yes">ManualSetup</Feature>
+			<Feature enabled="yes">OfficeSupport</Feature>
+			<Feature enabled="yes">AppxSupport</Feature>
+			<Feature enabled="no">NightLight</Feature>
+			<Feature enabled="yes">Netflix</Feature>
+			<Feature enabled="no">NetworkDiscovery</Feature>
+			<Feature enabled="yes">NvidiaSetup</Feature>
+			<Feature enabled="yes">OOBE</Feature>
+			<Feature enabled="no">SamsungSwitch</Feature>
+			<Feature enabled="yes">Scanning</Feature>
+			<Feature enabled="yes">ShellSearchSupport</Feature>
+			<Feature enabled="yes">Spotify</Feature>
+			<Feature enabled="yes">DefaultFonts</Feature>
+			<Feature enabled="no">SafeMode</Feature>
+			<Feature enabled="yes">SFC</Feature>
+			<Feature enabled="yes">TeamViewer</Feature>
+			<Feature enabled="no">Recommended-Tablet</Feature>
+			<Feature enabled="no">VPN</Feature>
+			<Feature enabled="no">USBModem</Feature>
+			<Feature enabled="yes">USB</Feature>
+			<Feature enabled="yes">VideoPlayback</Feature>
+			<Feature enabled="no">VisualStudio</Feature>
+			<Feature enabled="no">VSS</Feature>
+			<Feature enabled="yes">ServicingStack</Feature>
+			<Feature enabled="yes">ActivationKMS</Feature>
+			<Feature enabled="yes">Activation</Feature>
+			<Feature enabled="yes">WindowsStore</Feature>
+			<Feature enabled="yes">WindowsUpdate</Feature>
+			<Feature enabled="yes">WLAN</Feature>
+		</ComponentFeatures>
+		<MachineDrivers>
+			<Machine enabled="yes">HostMachine</Machine>
+			<Machine enabled="no">Hyper-V VM</Machine>
+			<Machine enabled="no">Parallels VM</Machine>
+			<Machine enabled="no">Virtual Box VM</Machine>
+			<Machine enabled="no">VMware VM</Machine>
+		</MachineDrivers>
+	</Compatibility>
+	<Features></Features>
+	<Packages></Packages>
+	<Commands>
+		<PostUpdates>
+			<!--<Command>cmd /c echo Example from [MOUNTDIR]\Windows &amp; pause</Command>-->
+			<!--<Command>dism /image:[MOUNTDIR] /get-intl</Command>-->
+		</PostUpdates>
+	</Commands>
+	<Drivers showHidden="false"></Drivers>
+	<Unattended mode="1">
+		<OEMSetupComplete>true</OEMSetupComplete>
+		<AnswerFileLocationPanther>false</AnswerFileLocationPanther>
+		<AnswerFileLocationBoot>false</AnswerFileLocationBoot>
+		<SaveBothArch>false</SaveBothArch>
+		<EditionPrompt>true</EditionPrompt>
+		<settings pass="oobeSystem">
+			<component name="Microsoft-Windows-Deployment">
+				<Reseal>
+					<Mode>OOBE</Mode>
+				</Reseal>
+			</component>		
+			<component name="Microsoft-Windows-International-Core">
+				<InputLocale>0407:00000407</InputLocale>
+				<SystemLocale>de-DE</SystemLocale>
+				<UILanguage>de-DE</UILanguage>
+				<UILanguageFallback>de-DE</UILanguageFallback>
+				<UserLocale>de-DE</UserLocale>
+			</component>
+			<component name="Microsoft-Windows-Shell-Setup">
+				<TimeZone>Mitteleuropäische Zeit</TimeZone>
+				<OOBE>
+					<HideEULAPage>true</HideEULAPage>
+					<HideOnlineAccountScreens>true</HideOnlineAccountScreens>
+					<HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
+					<NetworkLocation>Home</NetworkLocation>
+					<ProtectYourPC>3</ProtectYourPC>
+				</OOBE>
+			</component>
+		</settings>
+		<settings pass="windowsPE">
+			<component name="Microsoft-Windows-International-Core-WinPE">
+				<InputLocale>0407:00000407</InputLocale>
+				<SystemLocale>de-DE</SystemLocale>
+				<UILanguage>de-DE</UILanguage>
+				<UILanguageFallback>de-DE</UILanguageFallback>
+				<UserLocale>de-DE</UserLocale>
+				<SetupUILanguage>
+					<UILanguage>de-DE</UILanguage>
+				</SetupUILanguage>
+			</component>
+			<component name="Microsoft-Windows-Setup">
+				<Diagnostics>
+					<OptIn>false</OptIn>
+				</Diagnostics>
+				<DynamicUpdate>
+					<Enable>true</Enable>
+					<WillShowUI>OnError</WillShowUI>
+				</DynamicUpdate>
+				<ImageInstall>
+					<OSImage>
+						<WillShowUI>OnError</WillShowUI>
+					</OSImage>
+				</ImageInstall>
+				<UserData>
+					<AcceptEula>true</AcceptEula>
+					<ProductKey>
+						<Key>[KEY]</Key>
+						<WillShowUI>OnError</WillShowUI>
+					</ProductKey>
+				</UserData>
+			</component>
+		</settings>
+	</Unattended>
+	<Tweaks>
+		<Settings>
+			<TweakGroup name="CrashControl">
+				<Tweak name="CrashControl\AutoReboot">0</Tweak>
+			</TweakGroup>		
+			<TweakGroup name="Explorer">
+				<Tweak name="ControlPanel\StartupPage">1</Tweak>
+				<Tweak name="ControlPanel\AllItemsIconView">0</Tweak>
+				<Tweak name="Advanced\ShowTaskViewButton">0</Tweak>
+			</TweakGroup>
+			<TweakGroup name="Privacy">
+				<Tweak name="CloudContent\DisableWindowsConsumerFeatures">1</Tweak>
+				<Tweak name="Windows Search\AllowCortana">0</Tweak>
+				<Tweak name="Search\HistoryViewEnabled">0</Tweak>
+				<Tweak name="Search\DeviceHistoryEnabled">0</Tweak>
+				<Tweak name="Advanced\ShowCortanaButton">0</Tweak>
+				<Tweak name="AdvertisingInfo\Enabled">0</Tweak>
+				<Tweak name="Privacy\TailoredExperiencesWithDiagnosticDataEnabled">0</Tweak>
+				<Tweak name="Settings\AcceptedPrivacyPolicy">0</Tweak>
+				<Tweak name="TIPC\Enabled">0</Tweak>
+				<Tweak name="DataCollection\AllowTelemetry">1</Tweak>
+			</TweakGroup>
+			<TweakGroup name="DesktopTweaks">
+				<Tweak name="Explorer\NoPinningStoreToTaskbar">1</Tweak>
+				<Tweak name="NewStartPanel\{59031a47-3f72-44a7-89c5-5595fe6b30ee}">0</Tweak>
+				<Tweak name="NewStartPanel\{20D04FE0-3AEA-1069-A2D8-08002B30309D}">0</Tweak>
+				<Tweak name="NewStartPanel\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}">0</Tweak>
+				<Tweak name="NewStartPanel\{645FF040-5081-101B-9F08-00AA002F954E}">0</Tweak>
+				<Tweak name="NewStartPanel\{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}">0</Tweak>
+				<Tweak name="Advanced\MMTaskbarEnabled">0</Tweak>
+				<Tweak name="Advanced\TaskbarMn">0</Tweak>
+				<Tweak name="Advanced\TaskbarDa">0</Tweak>
+				<Tweak name="Communications\ConfigureChatAutoInstall">0</Tweak>				
+			</TweakGroup>
+			<TweakGroup name="System">
+				<Tweak name="OneDrive\DisableFileSyncNGSC">0</Tweak>
+			</TweakGroup>
+		</Settings>
+		<Services></Services>
+		<ExtraServices></ExtraServices>
+		<ScheduledTasks></ScheduledTasks>
+	</Tweaks>
+	<ApplyOptions>
+		<ImageTasks>
+			<Task>imageSaveRebuild</Task>
+			<Task>imageFormatWim</Task>
+			<Task>updates_install.wim_02_Professional_64</Task>
+			<Task>components_install.wim_02_Professional_64</Task>
+			<Task>tweaksettings_install.wim_02_Professional_64</Task>
+			<Task>registry_install.wim_02_Professional_64</Task>
+			<Task>postsetup_install.wim_02_Professional_64</Task>
+		</ImageTasks>
+		<AutoIsoFile>NTLite.iso</AutoIsoFile>
+		<AutoIsoLabel>NTLite</AutoIsoLabel>
+		<AutoSplitSize>4000</AutoSplitSize>
+		<CleanHotfixedLeftovers>0</CleanHotfixedLeftovers>
+		<OptimizeAppX>true</OptimizeAppX>
+		<ReuseDriverCache>false</ReuseDriverCache>
+	</ApplyOptions>
+	<Execution>
+		<Remove></Remove>
+		<Change></Change>
+		<Add>
+			<Item type="Command">
+				<Path>label</Path>
+				<Params>c: Windows</Params>
+				<Index>0</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3</Params>
+				<Index>1</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setacvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3</Params>
+				<Index>2</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3</Params>
+				<Index>3</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3</Params>
+				<Index>4</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setdcvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3</Params>
+				<Index>5</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3</Params>
+				<Index>6</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 a7066653-8d6c-40a8-910e-a1f54b84c7e5 2</Params>
+				<Index>7</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 a7066653-8d6c-40a8-910e-a1f54b84c7e5 2</Params>
+				<Index>8</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setacvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 a7066653-8d6c-40a8-910e-a1f54b84c7e5 2</Params>
+				<Index>9</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 a7066653-8d6c-40a8-910e-a1f54b84c7e5 2</Params>
+				<Index>10</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 a7066653-8d6c-40a8-910e-a1f54b84c7e5 2</Params>
+				<Index>11</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setdcvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 a7066653-8d6c-40a8-910e-a1f54b84c7e5 2</Params>
+				<Index>12</Index>
+			</Item>			
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 5CA83367-6E45-459F-A27B-476B1D01C936 0</Params>
+				<Index>13</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setacvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 5CA83367-6E45-459F-A27B-476B1D01C936 0</Params>
+				<Index>14</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 5CA83367-6E45-459F-A27B-476B1D01C936 0</Params>
+				<Index>15</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 5CA83367-6E45-459F-A27B-476B1D01C936 0</Params>
+				<Index>16</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setdcvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 5CA83367-6E45-459F-A27B-476B1D01C936 0</Params>
+				<Index>17</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 5CA83367-6E45-459F-A27B-476B1D01C936 0</Params>
+				<Index>18</Index>
+			</Item>		
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 96996BC0-AD50-47EC-923B-6F41874DD9EB 0</Params>
+				<Index>19</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 96996BC0-AD50-47EC-923B-6F41874DD9EB 0</Params>
+				<Index>20</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setacvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 96996BC0-AD50-47EC-923B-6F41874DD9EB 0</Params>
+				<Index>21</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 96996BC0-AD50-47EC-923B-6F41874DD9EB 0</Params>
+				<Index>22</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 96996BC0-AD50-47EC-923B-6F41874DD9EB 0</Params>
+				<Index>23</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-setdcvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 96996BC0-AD50-47EC-923B-6F41874DD9EB 0</Params>
+				<Index>24</Index>
+			</Item>		
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-change -monitor-timeout-ac 0</Params>
+				<Index>25</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-change -monitor-timeout-dc 15</Params>
+				<Index>26</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-change -standby-timeout-ac 0</Params>
+				<Index>27</Index>
+			</Item>
+			<Item type="Command">
+				<Path>powercfg</Path>
+				<Params>-change -standby-timeout-dc 0</Params>
+				<Index>28</Index>
+			</Item>
+		</Add>
+	</Execution>
+	<Registry>
+		<File>C:\Users\TrelLyX\Desktop\winsetting\Reg_1_Power.reg</File>
+		<File>C:\Users\TrelLyX\Desktop\winsetting\Reg_2_Apps.reg</File>
+		<File>C:\Users\TrelLyX\Desktop\winsetting\Reg_3_Settings.reg</File>
+		<File>C:\Users\TrelLyX\Desktop\winsetting\Reg_4_Control.reg</File>
+		<File>C:\Users\TrelLyX\Desktop\winsetting\Reg_5_Other.reg</File>
+		<File>C:\Users\TrelLyX\Desktop\winsetting\Reg_6_StartLayout.reg</File>
+	</Registry>
+</Preset>
