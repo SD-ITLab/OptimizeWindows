@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; Start > Windows System > Control Panel > File Explorer Options > General > Open File Explorer to > This PC
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"LaunchTo"=dword:00000001
+
+; Start > Windows System > Control Panel > File Explorer Options > General > Show recently used files in Quick access > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"ShowRecent"=dword:00000000
+
+; Start > Windows System > Control Panel > File Explorer Options > General > Show frequently used folders in Quick access > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"ShowFrequent"=dword:00000000

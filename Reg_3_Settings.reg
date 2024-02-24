@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+; Start > Settings > System > Notifications & actions > Show me the Windows welcome experience... > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-310093Enabled"=dword:00000000
+
+; Start > Settings > System > Notifications & actions > Suggest ways I can finish setting up my device... > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"ScoobeSystemSettingEnabled"=dword:00000000
+
+; Start > Settings > System > Notifications & actions > Get tips, tricks, and suggestions as you use Windows > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-338389Enabled"=dword:00000000
+
+; Start > Settings > Personalization > Start > Show recently added apps > Disabled
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"HideRecentlyAddedApps"=dword:00000001
+
+; Start > Settings > Personalization > Start > Show suggestions occasionally in Start > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-338388Enabled"=dword:00000000
+
+; Start > Settings > Personalization > Start > Show recently opened items in Jump Lists... > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackDocs"=dword:00000000
