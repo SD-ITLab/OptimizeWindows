@@ -1,0 +1,5 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Start]
+"ConfigureStartPins"="{\"pinnedList\":[{\"packagedAppId\":\"windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel\"},{\"desktopAppId\":\"Microsoft.Windows.Explorer\"},{\"packagedAppId\":\"Microsoft.WindowsStore_8wekyb3d8bbwe!App\"},{\"packagedAppId\":\"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App\"}]}"
+"ConfigureStartPins_ProviderSet"=dword:00000000
