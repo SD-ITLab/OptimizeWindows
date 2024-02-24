@@ -1,0 +1,177 @@
+﻿Windows Registry Editor Version 5.00
+
+; Start > Settings > Apps > Offline maps > Automatically update maps > Off
+[HKEY_LOCAL_MACHINE\SYSTEM\Maps]
+"AutoUpdateEnabled"=dword:00000000
+
+; Start > Settings > Update & Security > Windows Update > Get ready for Windows 11... > Dismiss notification
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"SvDismissedState"=dword:00000001
+
+; Start > Settings > Update & Security > Delivery Optimization > Allow downloads from other PCs > Disabled
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]
+"DODownloadMode"=dword:00000063
+
+; Start > Settings > Update & Security > Find my device > Off
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MdmCommon\SettingValues]
+"LocationSyncEnabled"=dword:00000000
+
+; Start > Settings > Privacy > Background apps > Edge > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > 3D Viewer > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Microsoft3DViewer_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Alarms & Clock > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.WindowsAlarms_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Calculator > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.WindowsCalculator_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Camera > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.WindowsCamera_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Cortana > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.549981C3F5F10_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Feedback Hub > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Get Help > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.GetHelp_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Groove Music > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.ZuneMusic_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Mail and Calendar > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\microsoft.windowscommunicationsapps_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Maps > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.WindowsMaps_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Microsoft Solitaire Collection > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Microsoft Store > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.WindowsStore_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Movies & TV > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.ZuneVideo_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Office > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > OneNote > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Office.OneNote_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Paint 3D > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.MSPaint_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > People > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.People_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Photos > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Windows.Photos_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Settings > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\windows.immersivecontrolpanel_cw5n1h2txyewy]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Skype > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.SkypeApp_kzf8qxf38zg5c]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Snip & Sketch > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.ScreenSketch_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Sticky Notes > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Tips > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Getstarted_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Voice Recorder > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Weather > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.BingWeather_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Xbox > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.XboxApp_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Xbox Game Bar > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Privacy > Background apps > Your Phone > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.YourPhone_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Apps > Apps & features > Mixed Reality Portal > Advanced options > Background apps > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.MixedReality.Portal_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Apps > Apps & features > Xbox Live > Advanced options > Background apps > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Xbox.TCUI_8wekyb3d8bbwe]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001
+
+; Start > Settings > Apps > Startup > Microsoft OneDrive > Off
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run]
+"OneDrive"=hex(3):03,00,00,00,00,F8,77,D1,BF,8D,D8,01
+
