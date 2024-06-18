@@ -12,10 +12,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
 "SubscribedContent-338389Enabled"=dword:00000000
 
-; Start > Settings > Personalization > Start > Show recently added apps > Disabled
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
-"HideRecentlyAddedApps"=dword:00000001
-
 ; Start > Settings > Personalization > Start > Show suggestions occasionally in Start > Off
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
 "SubscribedContent-338388Enabled"=dword:00000000
@@ -23,3 +19,7 @@ Windows Registry Editor Version 5.00
 ; Start > Settings > Personalization > Start > Show recently opened items in Jump Lists... > Off
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "Start_TrackDocs"=dword:00000000
+
+; Start > Settings > Data protection and security > Auto Device encryption > Off
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker]
+"PreventDeviceEncryption"=dword:00000001
