@@ -1,4 +1,4 @@
-﻿Windows Registry Editor Version 5.00
+Windows Registry Editor Version 5.00
 
 ; Start > Settings > Apps > Offline maps > Automatically update maps > Off
 [HKEY_LOCAL_MACHINE\SYSTEM\Maps]
@@ -7,10 +7,6 @@
 ; Start > Settings > Update & Security > Windows Update > Get ready for Windows 11... > Dismiss notification
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
 "SvDismissedState"=dword:00000001
-
-; Start > Settings > Update & Security > Delivery Optimization > Allow downloads from other PCs > Disabled
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]
-"DODownloadMode"=dword:00000063
 
 ; Start > Settings > Update & Security > Find my device > Off
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MdmCommon\SettingValues]
@@ -174,4 +170,3 @@
 ; Start > Settings > Apps > Startup > Microsoft OneDrive > Off
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run]
 "OneDrive"=hex(3):03,00,00,00,00,F8,77,D1,BF,8D,D8,01
-
