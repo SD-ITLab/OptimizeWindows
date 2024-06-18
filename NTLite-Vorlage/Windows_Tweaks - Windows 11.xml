@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Preset isAutoSaved="true" xmlns="urn:schemas-nliteos-com:pn.v1">
 	<Date>04/28/2023 22:16:51</Date>
 	<AppInfo>
@@ -15,15 +15,21 @@
 		<c>microsoft.windows.contentdeliverymanager 'Content-Delivery-Manager'</c>
 		<c>clipchamp.clipchamp 'Clipchamp'</c>
 		<c>microsoft.549981c3f5f10 'Cortana'</c>
+		<c>microsoft.bingnews 'Microsoft News'</c>
+		<c>microsoft.bingsearch 'Microsoft Bing Search'</c>
+		<c>microsoft.bingweather 'MSN Weather'</c>
 		<c>microsoft.gethelp 'Get Help'</c>
 		<c>microsoft.getstarted 'Tipps (Erste Schritte)'</c>
 		<c>microsoft.microsoftedge 'Microsoft Edge (Alte)'</c>
 		<c>microsoft.microsoftedgedevtoolsclient 'DevTools-Client für Microsoft Edge'</c>
+		<c>microsoft.windows.devhome 'Dev Home'</c>
+		<c>microsoft.outlookforwindows 'Outlook for Windows'</c>
 		<c>microsoft.microsoftofficehub 'Office'</c>
 		<c>microsoft.microsoftsolitairecollection 'Microsoft Solitaire Collection'</c>
 		<c>microsoft.microsoftstickynotes 'Microsoft Sticky Notes'</c>
 		<c>microsoft.mixedreality.portal 'Mixed Reality Portal'</c>
 		<c>microsoft.mspaint 'Paint 3D'</c>
+		<c>msteams 'Microsoft Teams'</c>
 		<c>microsoft.office.onenote 'OneNote'</c>
 		<c>microsoft.people 'Microsoft People'</c>
 		<c>microsoft.todos 'Microsoft To Do'</c>
@@ -119,6 +125,13 @@
 			</component>
 			<component name="Microsoft-Windows-Shell-Setup">
 				<TimeZone>Mitteleuropäische Zeit</TimeZone>
+				<OEMInformation>
+					<HelpCustomized>true</HelpCustomized>
+					<Manufacturer>CLS-Computer</Manufacturer>
+					<SupportHours>Mo-Sa : 09.00 - 19:00 h</SupportHours>
+					<SupportPhone>+49 (0) 621/7163591</SupportPhone>
+					<SupportURL>https://cls-computer.de/</SupportURL>
+				</OEMInformation>
 				<OOBE>
 					<HideEULAPage>true</HideEULAPage>
 					<HideOnlineAccountScreens>true</HideOnlineAccountScreens>
@@ -173,15 +186,6 @@
 				<Tweak name="Advanced\ShowTaskViewButton">0</Tweak>
 			</TweakGroup>
 			<TweakGroup name="Privacy">
-				<Tweak name="CloudContent\DisableWindowsConsumerFeatures">1</Tweak>
-				<Tweak name="Windows Search\AllowCortana">0</Tweak>
-				<Tweak name="Search\HistoryViewEnabled">0</Tweak>
-				<Tweak name="Search\DeviceHistoryEnabled">0</Tweak>
-				<Tweak name="Advanced\ShowCortanaButton">0</Tweak>
-				<Tweak name="AdvertisingInfo\Enabled">0</Tweak>
-				<Tweak name="Privacy\TailoredExperiencesWithDiagnosticDataEnabled">0</Tweak>
-				<Tweak name="Settings\AcceptedPrivacyPolicy">0</Tweak>
-				<Tweak name="TIPC\Enabled">0</Tweak>
 				<Tweak name="DataCollection\AllowTelemetry">1</Tweak>
 			</TweakGroup>
 			<TweakGroup name="DesktopTweaks">
@@ -191,6 +195,7 @@
 				<Tweak name="NewStartPanel\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}">0</Tweak>
 				<Tweak name="NewStartPanel\{645FF040-5081-101B-9F08-00AA002F954E}">0</Tweak>
 				<Tweak name="NewStartPanel\{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}">0</Tweak>
+				<Tweak name="Advanced\Start_Layout">1</Tweak>
 				<Tweak name="Advanced\MMTaskbarEnabled">0</Tweak>
 				<Tweak name="Advanced\TaskbarMn">0</Tweak>
 				<Tweak name="Advanced\TaskbarDa">0</Tweak>
@@ -227,157 +232,27 @@
 		<Add>
 			<Item type="Command">
 				<Path>label</Path>
-				<Params>c: Windows</Params>
+				<Params>c: OS</Params>
 				<Index>0</Index>
 			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3</Params>
+			<Item type="19">
+				<Path>net</Path>
+				<Params>accounts /maxpwage:unlimited</Params>
 				<Index>1</Index>
 			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setacvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3</Params>
+			<Item type="19">
+				<Path>reg add</Path>
+				<Params>"HKEY_USERS\S-1-5-20\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings" /v DownloadMode /t REG_DWORD /d 0 /f</Params>
 				<Index>2</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3</Params>
-				<Index>3</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3</Params>
-				<Index>4</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setdcvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3</Params>
-				<Index>5</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3</Params>
-				<Index>6</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 a7066653-8d6c-40a8-910e-a1f54b84c7e5 2</Params>
-				<Index>7</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 a7066653-8d6c-40a8-910e-a1f54b84c7e5 2</Params>
-				<Index>8</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setacvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 a7066653-8d6c-40a8-910e-a1f54b84c7e5 2</Params>
-				<Index>9</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 a7066653-8d6c-40a8-910e-a1f54b84c7e5 2</Params>
-				<Index>10</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 a7066653-8d6c-40a8-910e-a1f54b84c7e5 2</Params>
-				<Index>11</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setdcvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 a7066653-8d6c-40a8-910e-a1f54b84c7e5 2</Params>
-				<Index>12</Index>
-			</Item>			
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 5CA83367-6E45-459F-A27B-476B1D01C936 0</Params>
-				<Index>13</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setacvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 5CA83367-6E45-459F-A27B-476B1D01C936 0</Params>
-				<Index>14</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 5CA83367-6E45-459F-A27B-476B1D01C936 0</Params>
-				<Index>15</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 5CA83367-6E45-459F-A27B-476B1D01C936 0</Params>
-				<Index>16</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setdcvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 5CA83367-6E45-459F-A27B-476B1D01C936 0</Params>
-				<Index>17</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 5CA83367-6E45-459F-A27B-476B1D01C936 0</Params>
-				<Index>18</Index>
-			</Item>		
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 96996BC0-AD50-47EC-923B-6F41874DD9EB 0</Params>
-				<Index>19</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 96996BC0-AD50-47EC-923B-6F41874DD9EB 0</Params>
-				<Index>20</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setacvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 96996BC0-AD50-47EC-923B-6F41874DD9EB 0</Params>
-				<Index>21</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 96996BC0-AD50-47EC-923B-6F41874DD9EB 0</Params>
-				<Index>22</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 4f971e89-eebd-4455-a8de-9e59040e7347 96996BC0-AD50-47EC-923B-6F41874DD9EB 0</Params>
-				<Index>23</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-setdcvalueindex a1841308-3541-4fab-bc81-f71556f20b4a 4f971e89-eebd-4455-a8de-9e59040e7347 96996BC0-AD50-47EC-923B-6F41874DD9EB 0</Params>
-				<Index>24</Index>
-			</Item>		
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-change -monitor-timeout-ac 0</Params>
-				<Index>25</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-change -monitor-timeout-dc 15</Params>
-				<Index>26</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-change -standby-timeout-ac 0</Params>
-				<Index>27</Index>
-			</Item>
-			<Item type="Command">
-				<Path>powercfg</Path>
-				<Params>-change -standby-timeout-dc 0</Params>
-				<Index>28</Index>
 			</Item>
 		</Add>
 	</Execution>
 	<Registry>
-		<File>C:\Users\TrelLyX\Desktop\winsetting\Reg_1_Power.reg</File>
-		<File>C:\Users\TrelLyX\Desktop\winsetting\Reg_2_Apps.reg</File>
-		<File>C:\Users\TrelLyX\Desktop\winsetting\Reg_3_Settings.reg</File>
-		<File>C:\Users\TrelLyX\Desktop\winsetting\Reg_4_Control.reg</File>
-		<File>C:\Users\TrelLyX\Desktop\winsetting\Reg_5_Other.reg</File>
-		<File>C:\Users\TrelLyX\Desktop\winsetting\Reg_6_StartLayout.reg</File>
+		<File>C:\Users\SD-ITlab\Desktop\winsetting\Reg_1_Power.reg</File>
+		<File>C:\Users\SD-ITlab\Desktop\winsetting\Reg_2_Apps.reg</File>
+		<File>C:\Users\SD-ITlab\Desktop\winsetting\Reg_3_Settings.reg</File>
+		<File>C:\Users\SD-ITlab\Desktop\winsetting\Reg_4_Control.reg</File>
+		<File>C:\Users\SD-ITlab\Desktop\winsetting\Reg_5_Other.reg</File>
+		<File>C:\Users\SD-ITlab\Desktop\winsetting\Reg_6_StartLayout.reg</File>
 	</Registry>
 </Preset>
