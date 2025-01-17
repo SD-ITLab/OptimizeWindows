@@ -67,7 +67,7 @@ Windows Registry Editor Version 5.00
 ; Start > Windows System > Control Panel > Power Options > Change plan settings (High performance) > Change advanced power settings > Hard disk > Turn off hard disk after > Never
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\0012ee47-9041-4b5d-9b77-535fba8b1442\6738e2c4-e8a5-4a42-b16a-e040e769756e\DefaultPowerSchemeValues\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c]
 "ACSettingIndex"=dword:00000000
-"DCSettingIndex"=dword:00000000
+"DCSettingIndex"=dword:00000005
 
 ; Start > Windows System > Control Panel > Power Options > Change plan settings (High performance) > Change advanced power settings > USB settings > USB selective suspend setting > Disabled (Plug-In) / Enabled (Batterymode)
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\2a737441-1930-4402-8d77-b2bebba308a3\48e6b7a6-50f5-4782-a5d4-53bb8f07e226\DefaultPowerSchemeValues\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c]
@@ -78,6 +78,11 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\893dee8e-2bef-41e0-89c6-b55d0929964c\DefaultPowerSchemeValues\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c]
 "ACSettingIndex"=dword:00000032
 "DCSettingIndex"=dword:00000005
+
+; Start > Windows System > Control Panel > Power Options > Change plan settings (High performance) > Change advanced power settings > Processor power management > Core Parking > 0% (Plug-In) / 5% (Batterymode)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583\DefaultPowerSchemeValues\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c]
+"ACSettingIndex"=dword:00000064  ; 0% (Volle Leistung)
+"DCSettingIndex"=dword:00000032  ; 50% (Ausgewogen)
 
 ; Start > Windows System > Control Panel > Power Options > Change plan settings (Balanced) > Change advanced power settings > Battery > Critical battery action > Shut down
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\e73a048d-bf27-4f12-9731-8b2076e8891f\637ea02f-bbcb-4015-8e2c-a1c7b9c0b546\DefaultPowerSchemeValues\381b4222-f694-41f0-9685-ff5bb260df2e]
@@ -140,15 +145,3 @@ Windows Registry Editor Version 5.00
 ; Hidden > Hibernate > Off
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
 "HibernateEnabledDefault"=dword:00000000
-
-; Start > Windows System > Control Panel > Power Options > Choose what the power buttons do > Turn on fast startup > Off
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
-"HiberbootEnabled"=dword:00000000
-
-; Start > Windows System > Control Panel > Power Options > Choose what the power buttons do > Sleep > Off
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings]
-"ShowSleepOption"=dword:00000000
-
-; Start > Windows System > Control Panel > Power Options > Choose what the power buttons do > Hibernate > Off
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings]
-"ShowHibernateOption"=dword:00000000
