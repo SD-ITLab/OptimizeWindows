@@ -64,7 +64,7 @@ Windows Registry Editor Version 5.00
 "ACSettingIndex"=dword:00000000
 "DCSettingIndex"=dword:00000000
 
-; Start > Windows System > Control Panel > Power Options > Change plan settings (High performance) > Change advanced power settings > Hard disk > Turn off hard disk after > > Never (Plug-In) / after 15min (Batterymode)
+; Start > Windows System > Control Panel > Power Options > Change plan settings (High performance) > Change advanced power settings > Hard disk > Turn off hard disk after > Never
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\0012ee47-9041-4b5d-9b77-535fba8b1442\6738e2c4-e8a5-4a42-b16a-e040e769756e\DefaultPowerSchemeValues\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c]
 "ACSettingIndex"=dword:00000000
 "DCSettingIndex"=dword:00000005
