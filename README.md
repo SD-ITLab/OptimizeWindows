@@ -1,5 +1,5 @@
 # Windows-Optimierungen & Anpassungen
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://badgen.net/github/license/SD-ITLab/OptimizeWindows)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://badgen.net/github/license/SD-ITLab/OptimizeWindows)
 
 
 ## 🌟 Einleitung
