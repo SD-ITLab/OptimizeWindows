@@ -1,5 +1,5 @@
 # Windows Optimizations & Adjustments
-![License](https://badgen.net/github/license/SD-ITLab/OptimizeWindows)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://badgen.net/github/license/SD-ITLab/OptimizeWindows)
 ## 🌟 Introduction
 
 The Windows image can be optimized and customized in various ways. The optimizations provided here are based on a guide from the NTLite forum, which I have adapted and expanded for my needs.
@@ -122,7 +122,7 @@ If you have any questions or suggestions for improvements, feel free to open an 
 #DEUTSCH
 
 # Windows-Optimierungen & Anpassungen
-![License](https://badgen.net/github/license/SD-ITLab/OptimizeWindows)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://badgen.net/github/license/SD-ITLab/OptimizeWindows)
 
 ## 🌟 Einleitung
 Das Windows-Image kann auf viele unterschiedliche Weise optimiert und angepasst werden. Die hier bereitgestellten Optimierungen basieren auf einer Anleitung aus dem NTLite-Forum, welche ich für meine Zwecke angepasst und erweitert habe.
