@@ -7,7 +7,8 @@ Das Windows-Image kann auf viele unterschiedliche Weise optimiert und angepasst 
 
 Ich stelle Windows für Kunden und Personen bereit, die ein optimiertes System ohne Einschränkungen wünschen. Daher beinhalten meine Anpassungen nur allgemeine Änderungen, die im laufenden Betrieb jederzeit rückgängig gemacht werden können.
 
-Meine Voreinstellungen und Optimierungen sind auf GitHub verfügbar.  
+Meine Voreinstellungen und Optimierungen sind hier auf GitHub verfügbar.  
+
 https://sd-itlab.de/benutzerdefinierte-windowsiso/
 
 ## 📂 Verfügbare Optimierungs-Dateien
@@ -102,12 +103,6 @@ Dieses Projekt steht unter der **MIT-Lizenz**. Jeder kann es frei verwenden, anp
 ---
 
 ## 💡 Hinweise
-Falls Fragen oder Verbesserungsvorschläge bestehen, gerne ein Issue auf GitHub erstellen oder eine Diskussion starten!
-
-
-
-💡 Hinweise
-
 Falls Fragen oder Verbesserungsvorschläge bestehen, gerne ein Issue auf GitHub erstellen oder eine Diskussion starten!
 
 
