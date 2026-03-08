@@ -76,7 +76,7 @@ Windows Registry Editor Version 5.00
 
 ; Start > Windows System > Control Panel > Power Options > Change plan settings (High performance) > Change advanced power settings > Processor power management > Minimum processor state > 50% (Plug-In) / 5% (Batterymode)
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\893dee8e-2bef-41e0-89c6-b55d0929964c\DefaultPowerSchemeValues\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c]
-"ACSettingIndex"=dword:00000032
+"ACSettingIndex"=dword:00000005
 "DCSettingIndex"=dword:00000005
 
 ; Start > Windows System > Control Panel > Power Options > Change plan settings (High performance) > Change advanced power settings > Processor power management > Core Parking > 0% (Plug-In) / 5% (Batterymode)
