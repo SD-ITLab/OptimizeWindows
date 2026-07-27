@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preset isAutoSaved="true" xmlns="urn:schemas-nliteos-com:pn.v1">
+	<Date>07/26/2026 19:48:56</Date>
+	<Version>1.1</Version>
+	<AppInfo>
+		<Version>2026.7.11258</Version>
+		<Licensed>Yes</Licensed>
+		<Protections>Yes</Protections>
+		<Host>Windows 11 Professional 25H2 x64 - 10.0.26200.8875 (de-DE)</Host>
+	</AppInfo>
+	<ImageInfo>
+		<Version mode="offline">Windows 11 Core 25H2 x64 - 10.0.26200.8968 (de-DE)</Version>
+		<GUID>{87155A48-1770-36AA-EE6A-05277E97CCD1}</GUID>
+	</ImageInfo>
+	<RemoveComponents AppRemovalMode="DISM">
+		<c>clipchamp.clipchamp 'Clipchamp'</c>
+		<c>microsoft.bingnews 'Microsoft News'</c>
+		<c>microsoft.bingsearch 'Microsoft Bing Search'</c>
+		<c>microsoft.bingweather 'MSN Weather'</c>
+		<c>microsoft.gethelp 'Get Help'</c>
+		<c>microsoft.microsoftedge 'Microsoft Edge (Legacy)'</c>
+		<c>microsoft.microsoftedgedevtoolsclient 'DevTools-Client für Microsoft Edge'</c>
+		<c>microsoft.microsoftofficehub 'Microsoft 365 (Office)'</c>
+		<c>microsoft.microsoftsolitairecollection 'Solitaire &amp; Casual Games'</c>
+		<c>microsoft.microsoftstickynotes 'Microsoft Sticky Notes'</c>
+		<c>microsoft.outlookforwindows 'Outlook for Windows'</c>
+		<c>microsoft.todos 'Microsoft To Do'</c>
+		<c>microsoft.windows.contentdeliverymanager 'Content-Delivery-Manager'</c>
+		<c>microsoft.windows.devhome 'Dev Home'</c>
+		<c>microsoft.windowsfeedbackhub 'Feedback Hub'</c>
+		<c>microsoft.yourphone 'Phone Link'</c>
+		<c>microsoft.zunemusic 'Windows Media Player'</c>
+		<c>microsoftcorporationii.microsoftfamily 'Microsoft Family'</c>
+		<c>msteams 'Microsoft Teams'</c>
+		<c>onedrive</c>
+		<c>retaildemo 'Demo-Inhalte für den Einzelhandel'</c>
+	</RemoveComponents>
+	<Compatibility>
+		<ComponentFeatures>
+			<Feature enabled="no">AppGuard</Feature>
+			<Feature enabled="yes">Battle.net</Feature>
+			<Feature enabled="no">YubiKey</Feature>
+			<Feature enabled="no">Bluetooth</Feature>
+			<Feature enabled="no">CapFrameX</Feature>
+			<Feature enabled="yes">FileSharing</Feature>
+			<Feature enabled="yes">Discord</Feature>
+			<Feature enabled="no">Docker</Feature>
+			<Feature enabled="yes">Printing</Feature>
+			<Feature enabled="yes">EAC</Feature>
+			<Feature enabled="yes">Recommended-All</Feature>
+			<Feature enabled="no">Hyper-V</Feature>
+			<Feature enabled="no">iCloud</Feature>
+			<Feature enabled="yes">USBCamera</Feature>
+			<Feature enabled="no">Kaspersky</Feature>
+			<Feature enabled="yes">OfficeSupport</Feature>
+			<Feature enabled="yes">NightLight</Feature>
+			<Feature enabled="yes">Netflix</Feature>
+			<Feature enabled="no">NetworkDiscovery</Feature>
+			<Feature enabled="yes">NvidiaSetup</Feature>
+			<Feature enabled="no">OneNote</Feature>
+			<Feature enabled="yes">OOBE</Feature>
+			<Feature enabled="no">RDPServer</Feature>
+			<Feature enabled="no">SamsungSwitch</Feature>
+			<Feature enabled="yes">Scanning</Feature>
+			<Feature enabled="yes">ShellSearchSupport</Feature>
+			<Feature enabled="no">SnippingTool</Feature>
+			<Feature enabled="yes">Spotify</Feature>
+			<Feature enabled="yes">SFC</Feature>
+			<Feature enabled="yes">DefaultFonts</Feature>
+			<Feature enabled="no">SafeMode</Feature>
+			<Feature enabled="yes">TeamViewer</Feature>
+			<Feature enabled="no">Recommended-Tablet</Feature>
+			<Feature enabled="yes">AppxSupport</Feature>
+			<Feature enabled="no">VPN</Feature>
+			<Feature enabled="yes">HostRefresh</Feature>
+			<Feature enabled="no">USBModem</Feature>
+			<Feature enabled="yes">USB</Feature>
+			<Feature enabled="yes">VideoPlayback</Feature>
+			<Feature enabled="yes">VisualStudio</Feature>
+			<Feature enabled="no">VSS</Feature>
+			<Feature enabled="yes">ServicingStack</Feature>
+			<Feature enabled="no">WFC</Feature>
+			<Feature enabled="yes">WindowsStore</Feature>
+			<Feature enabled="yes">WindowsUpdate</Feature>
+			<Feature enabled="yes">Activation</Feature>
+			<Feature enabled="yes">WinSetup</Feature>
+			<Feature enabled="yes">WLAN</Feature>
+			<Feature enabled="no">PITR</Feature>
+			<Feature enabled="yes">LegacyGames</Feature>
+		</ComponentFeatures>
+		<MachineDrivers>
+			<Machine enabled="yes">HostMachine</Machine>
+			<Machine enabled="no">Hyper-V VM</Machine>
+			<Machine enabled="no">Parallels VM</Machine>
+			<Machine enabled="no">Virtual Box VM</Machine>
+			<Machine enabled="no">VMware VM</Machine>
+		</MachineDrivers>
+	</Compatibility>
+	<Packages>
+		<Options>
+			<CleanHotfixedLeftovers>3</CleanHotfixedLeftovers>
+			<OptimizeAppX>true</OptimizeAppX>
+			<StageSecureBoot>true</StageSecureBoot>
+		</Options>
+	</Packages>
+	<Drivers>
+		<Options>
+			<ShowHidden>false</ShowHidden>
+		</Options>
+	</Drivers>
+	<Unattended mode="1">
+		<EditionPrompt>true</EditionPrompt>
+		<settings pass="oobeSystem">
+			<component name="Microsoft-Windows-Deployment">
+				<Reseal>
+					<Mode>OOBE</Mode>
+				</Reseal>
+			</component>
+			<component name="Microsoft-Windows-International-Core">
+				<SystemLocale>de-DE</SystemLocale>
+				<UserLocale>de-DE</UserLocale>
+				<InputLocale>0407:00000407</InputLocale>
+				<UILanguage>de-DE</UILanguage>
+				<UILanguageFallback>de-DE</UILanguageFallback>
+			</component>
+			<component name="Microsoft-Windows-Shell-Setup">
+				<TimeZone>W. Europe Standard Time</TimeZone>
+				<OOBE>
+					<HideEULAPage>true</HideEULAPage>
+					<HideOnlineAccountScreens>true</HideOnlineAccountScreens>
+					<HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
+					<NetworkLocation>Home</NetworkLocation>
+					<ProtectYourPC>3</ProtectYourPC>
+				</OOBE>
+			</component>
+		</settings>
+		<settings pass="windowsPE">
+			<component name="Microsoft-Windows-International-Core-WinPE">
+				<CopyOobe>true</CopyOobe>
+			</component>
+			<component name="Microsoft-Windows-Setup">
+				<Diagnostics>
+					<OptIn>false</OptIn>
+				</Diagnostics>
+				<DynamicUpdate>
+					<Enable>false</Enable>
+					<WillShowUI>OnError</WillShowUI>
+				</DynamicUpdate>
+				<UserData>
+					<AcceptEula>true</AcceptEula>
+					<ProductKey>
+						<Key>[KEY]</Key>
+						<WillShowUI>OnError</WillShowUI>
+					</ProductKey>
+				</UserData>
+			</component>
+		</settings>
+	</Unattended>
+	<Tweaks>
+		<Settings>
+			<TweakGroup name="CrashControl">
+				<Tweak name="CrashControl\AutoReboot">0</Tweak>
+			</TweakGroup>
+			<TweakGroup name="Privacy">
+				<Tweak name="DataCollection\AllowTelemetry">1</Tweak>
+			</TweakGroup>
+			<TweakGroup name="DesktopTweaks">
+				<Tweak name="NewStartPanel\{59031a47-3f72-44a7-89c5-5595fe6b30ee}">0</Tweak>
+				<Tweak name="NewStartPanel\{20D04FE0-3AEA-1069-A2D8-08002B30309D}">0</Tweak>
+				<Tweak name="NewStartPanel\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}">0</Tweak>
+				<Tweak name="NewStartPanel\{645FF040-5081-101B-9F08-00AA002F954E}">0</Tweak>
+				<Tweak name="NewStartPanel\{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}">0</Tweak>
+				<Tweak name="Communications\ConfigureChatAutoInstall">0</Tweak>
+			</TweakGroup>
+			<TweakGroup name="Explorer">
+				<Tweak name="ControlPanel\StartupPage">1</Tweak>
+				<Tweak name="ControlPanel\AllItemsIconView">0</Tweak>
+				<Tweak name="Advanced\ShowTaskViewButton">0</Tweak>
+			</TweakGroup>
+			<TweakGroup name="System">
+				<Tweak name="OneDrive\DisableFileSyncNGSC">0</Tweak>
+			</TweakGroup>
+			<TweakGroup name="TaskbarTweaks">
+				<Tweak name="Explorer\NoPinningStoreToTaskbar">1</Tweak>
+			</TweakGroup>
+		</Settings>
+		<Services>
+			<TweakGroup name="services">
+				<Tweak name="tzautoupdate\tzautoupdate">2</Tweak>
+			</TweakGroup>
+		</Services>
+	</Tweaks>
+	<ApplyOptions>
+		<ImageTasks>
+			<Task>imageSaveRebuild</Task>
+			<Task>imageFormatWim</Task>
+			<Task>updates_install.wim_02_Professional_64</Task>
+			<Task>components_install.wim_02_Professional_64</Task>
+			<Task>tweaksettings_install.wim_02_Professional_64</Task>
+			<Task>registry_install.wim_02_Professional_64</Task>
+			<Task>postsetup_install.wim_02_Professional_64</Task>
+		</ImageTasks>
+		<Commands>
+			<PostApply>
+				<!--<Command>cmd /C echo Example from "[MOUNTDIR]\Windows" &amp; pause</Command>-->
+				<!--<Command>cmd /C dism /image:"[MOUNTDIR]" /get-intl</Command>-->
+				<!--<Command>C:\PathToScript\test.cmd</Command>-->
+			</PostApply>
+		</Commands>
+	</ApplyOptions>
+	<Execution BeforeLogonMode="0">
+		<Add>
+			<Item type="19">
+				<Path>label</Path>
+				<Params>c: OS</Params>
+				<Index>0</Index>
+			</Item>
+			<Item type="19">
+				<Path>net</Path>
+				<Params>accounts /maxpwage:unlimited</Params>
+				<Index>1</Index>
+			</Item>
+			<Item type="19">
+				<Path>reg add</Path>
+				<Params>"HKEY_USERS\S-1-5-20\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings" /v DownloadMode /t REG_DWORD /d 0 /f</Params>
+				<Index>2</Index>
+			</Item>
+			<Item type="19">
+				<Path>powercfg</Path>
+				<Params>-change -monitor-timeout-ac 0</Params>
+				<Index>3</Index>
+			</Item>
+			<Item type="19">
+				<Path>powercfg</Path>
+				<Params>-change -monitor-timeout-dc 10</Params>
+				<Index>4</Index>
+			</Item>
+			<Item type="19">
+				<Path>powercfg</Path>
+				<Params>-change -standby-timeout-ac 0</Params>
+				<Index>5</Index>
+			</Item>
+			<Item type="19">
+				<Path>powercfg</Path>
+				<Params>-change -standby-timeout-dc 20</Params>
+				<Index>6</Index>
+			</Item>
+		</Add>
+	</Execution>
+	<Registry>
+		<File>C:\Users\SDITLab\Desktop\winsetting\Reg_1_Power_Balanced.reg</File>
+		<File>C:\Users\SDITLab\Desktop\winsetting\Reg_2_Apps.reg</File>
+		<File>C:\Users\SDITLab\Desktop\winsetting\Reg_3_Settings.reg</File>
+		<File>C:\Users\SDITLab\Desktop\winsetting\Reg_4_Control.reg</File>
+		<File>C:\Users\SDITLab\Desktop\winsetting\Reg_5_Other.reg</File>
+		<File>C:\Users\SDITLab\Desktop\winsetting\Reg_6_StartLayout.reg</File>
+	</Registry>
+</Preset>
